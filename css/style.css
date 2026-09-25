@@ -1,7 +1,279 @@
 body{
-    background-color: blue;
+    max-width: 1170px;
+    margin:0 auto;
+    background-color:rgb(243, 170, 170);
+}
+
+section.card_section h1 {
+    font-size: 30px;
+    text-align: center;
+    
+}
+section.card_section h5 {
+    font-size: 20px;
+    text-align: center;
+       font-style: italic;
+}
+.ri_container {
+    display: flex;
+    gap: ; 
+   flex-direction: row; 
+    box-shadow: 9px 2px 9px black;
+    border-radius: 5PX;
+}
+/*small device*/
+@media screen and (max-width:576px) {
+    .ri_container{
+        flex-direction: column; 
+        margin: 0 auto;
+        text-align: center;
+        
+        
+       
+    }
+    .incharge{
+      flex: 1;
+        padding-bottom: 20px;
+    
+    }
+     
+    
+    
+}
+
+.incharge {
+  width: 580px;
+  background: green;
+  text-align: center;
+  align-content: center;
+}
+.incharge_1 {
+  width: 580px;
+  background: green;
+  text-align: center;
+  align-content: center;
+}
+.incharge img {
+
+    margin-top: 63px;
+    border-radius: 15px;
+}
+#boss {
+  font-size: 30px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.incharge_1 h3 {
+  font-size: 30px;
+  margin-top: -45px;
+  color: white;
+}
+.incharge_1 p {
+  font-size: 20px;
     color: white;
 }
-h1, p, span{
-    font-weight: bold;
+.incharge_1 a {
+  font-size: 18px;
+  text-decoration: ;
+color: yellow;
 }
+  
+.incharge h3 span {
+  color: #f6f1f0;
+}
+.profile_container{
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+margin: 0 auto;
+flex-direction: row;
+}
+
+/*small device*/
+@media screen and (max-width:576px) {
+    .profile_container{
+        flex-direction: column; 
+        margin: 0 auto;
+        text-align: center;
+       
+    }
+    .profile{
+      flex: 1;
+      margin: 0 auto;
+    }
+  }
+
+
+.profile {
+    width: 264px;
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    padding: 10px;
+    /*box-shadow: 10px 10px 10px #918989;*/
+    background-color: rgb(211, 211, 7);
+    text-align: center;
+}
+.profile:hover{
+background-color: rgb(125, 201, 12);
+transition: 2.0s;
+}
+.profile img {
+    width: 100%;
+    border-radius: 150px 50px 30px;
+    border: 1px solid black;
+    box-shadow: 2px 4px 1px 1px green;
+}
+.profile img:hover{
+    box-shadow: 2px 4px 1px 1px rgb(125, 201, 12);;
+}
+#link {
+  font-size: 18px;
+  color: white;
+  text-decoration: ;
+color: rgb(6, 6, 252);}
+
+
+.profile.saiful_jalal {
+  padding-right: 304px;
+}
+
+
+.footer {
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+  background: green;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+/*small device*/
+@media screen and (max-width:576px) {
+    .footer{
+        flex-direction: column; 
+        margin: 0 auto;
+        text-align: center;
+       
+    }
+    .footertitle{
+      flex: 1;
+      margin: 0 auto;
+      margin-left: -150px;
+    }
+    .footertitle p{
+      flex: 1;
+      margin: 0 auto;
+      
+    }
+    .footermenu  {
+      flex: 1;
+      margin: 0 auto;
+      flex-direction: column; 
+    }
+    .footermenu li {
+      flex: 1;
+      margin: 0 auto;
+      flex-direction: column; 
+    }
+    .footermenu li a{
+      flex: 1;
+      margin: 0 auto;
+      flex-direction: column; 
+    }
+  }
+
+
+
+
+.footertitle {
+  width: 500px;
+}
+.footermenu {
+  width: 540px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 49px;
+  margin-left: -60px;
+}
+
+.footermenu li {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.footermenu li a {
+  text-decoration: none;
+  color: yellow;
+}
+.footermenu li a:hover {
+ color: white;
+}
+
+.footertitle p {
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 310px;
+}
+.footertitle p span {
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/*.card_container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 356px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #918989;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card:hover {
+    background: #6ef1d3;
+}
+.card h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card p {font-size: 15px;text-align: center;}
+
+.card button {background: black;
+    color: white;
+    padding: 8px 15px;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;}
+    
+
+.card button:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
